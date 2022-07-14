@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bunny Smile At You</title>
+    <!-- Custom fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
     <!-- bsaynft style CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Font Awesome CSS -->
@@ -17,9 +22,9 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
+  <nav class="navbar navbar-expand-lg theme-1 shadow fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="">
+        <a class="image-box p-3" href="">
           <img src="images/logo.png" alt="logo image">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,7 +35,16 @@
             <li class="nav-item"><a class="nav-link" href="#main">Main</a></li>
             <li class="nav-item"><a class="nav-link" href="#Collections">Collections</a></li>
             <li class="nav-item"><a class="nav-link" href="#project">Project</a></li>
-            <li class="nav-item"><a class="nav-link" href="#tools">Tools</a></li>
+            <li class="nav-item"><a class="nav-link" href="#galery">Galery</a></li>
+            <li class="nav-item"><a class="nav-link" href="#tools">Tools</a>
+              <div uk-dropdown>
+                <ul class="uk-nav uk-dropdown-nav">
+                    <li><a href="#">Wardrobe</a></li>
+                    <li><a href="#">Rarity Checker</a></li>
+                    <li><a href="#">Upgrade Tool</a></li>
+                </ul>
+              </div>
+            </li>
             <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
             <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
           </div>
@@ -43,53 +57,76 @@
         </button></a>
     </nav>
 
+    <nav class="uk-navbar-container" uk-navbar>
+      <div class="uk-navbar-left">
+  
+          <ul class="uk-navbar-nav">
+              <li class="uk-active"><a href="#">Active</a></li>
+              <li>
+                  <a href="#">Parent</a>
+                  <div class="uk-navbar-dropdown">
+                      <ul class="uk-nav uk-navbar-dropdown-nav">
+                          <li class="uk-active"><a href="#">Active</a></li>
+                          <li><a href="#">Item</a></li>
+                          <li><a href="#">Item</a></li>
+                      </ul>
+                  </div>
+              </li>
+              <li><a href="#">Item</a></li>
+          </ul>
+  
+      </div>
+  </nav>
+
   <!-- Main -->
-  <section id="main" class="main-section theme">
-    <div class="container">
-      <div class="row align-items-center text-white">
+  <section id="main" class="theme-1 pt-3">
+    <div class="container pt-7">
+      <div class="row align-items-center">
         <!-- BSAY NFT description -->
-        <div class="col-md-6 text-start">
-          <h1 class="display-1" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">Bunny Smile At You</h1>
-          <h3 class="display-3 pb-3" uk-scrollspy="cls: uk-animation-slide-right; delay: 300; repeat: true">
+        <div class="col-md-6 text-center">
+          <p class="display-1-main" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">Bunny Smile At You</p>
+          <p class="pb-3" uk-scrollspy="cls: uk-animation-slide-right; delay: 300; repeat: true">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, impedit rem, doloremque autem quibusdam blanditiis harum alias hic accusantium maxime atque ratione magni repellat?
-          </h3>
+          </p>
           <!-- MINT/Marketplace button -->
-          <a class="nav-link" href="#faq" uk-scrollspy="cls: uk-animation-slide-left; delay: 500; repeat: true"><button type="button" class="rounded-pill btn-rounded">Marketplace
-            <span><i class="fas fa-arrow-right"></i></span>
-          </button></a>
+          <a class="nav-link" href="#faq" uk-scrollspy="cls: uk-animation-slide-left; delay: 300; repeat: true">
+            <button type="button" class="rounded-pill btn-rounded">MINT NOW!
+              <span><i class="fas fa-arrow-right"></i></span>
+            </button>
+          </a>
         </div>
         <!-- Featured BSAY image -->
-        <div class="col-md-6 text-end" uk-scrollspy="cls: uk-animation-fade; delay: 500; repeat: true">
+        <div class="col-md-6 text-end fa-beat-fade">
           <div class="image-box">
             <img src="images/intro-section-illustration.png" alt="video illutration" class="img-fluid">
           </div>
         </div>
       </div>
     </div>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#151414" fill-opacity="1" d="M0,160L48,176C96,192,192,224,288,208C384,192,480,128,576,133.3C672,139,768,213,864,202.7C960,192,1056,96,1152,74.7C1248,53,1344,107,1392,133.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 250"><path fill="#181818" fill-opacity="1" d="M0,160L48,176C96,192,192,224,288,208C384,192,480,128,576,133.3C672,139,768,213,864,202.7C960,192,1056,96,1152,74.7C1248,53,1344,107,1392,133.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
   </section>
 
   <!-- Collections -->
   <section id="Collections">
     <div class="container pt-5">
       <div class="row text-center">
-        <h1 class="display-1-themed" uk-scrollspy="cls: uk-animation-slide-top; repeat: true">OUR COLLECTIONS</h1>   
+        <p class="display-1-themed" uk-scrollspy="cls: uk-animation-slide-top; repeat: true">OUR COLLECTIONS</p>   
         <p class="pb-5" uk-scrollspy="cls: uk-animation-slide-top; delay: 200; repeat: true">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
       </div>
     </div>
     <!-- The Smilling Bunny  -->
-    <div class="container pt-5">
+    <div class="container theme-3 pt-5 pb-5">
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-4">
-          <div class="content" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
-            <h2 class="display-2-themed mt-1">The Smiling Bunnies</h2>
+          <div class="content text-center" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+            <p class="display-2-themed mt-1">The Smiling Bunnies</p>
             <p class="lh-lg pb-3">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, impedit rem,
               doloremque autem quibusdam blanditiis harum alias hic accusantium 
               maxime atque ratione magni repellat?
             </p>
           </div>
-          <a class="nav-link" href="#faq" uk-scrollspy="cls: uk-animation-slide-left; delay: 50; repeat: true"><button type="button" class="rounded-pill btn-rounded">Marketplace
+          <a class="nav-link text-center" href="#faq" uk-scrollspy="cls: uk-animation-slide-left; delay: 100; repeat: true"><button type="button" class="rounded-pill btn-rounded">Marketplace
             <span><i class="fas fa-arrow-right"></i></span>
           </button></a>
         </div>
@@ -99,176 +136,296 @@
           </div>
         </div>
       </div>
-      <!-- Bunny Smile At You  -->
-      <div class="container pt-5 pb-5">
-        <div class="row">
-          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-4 text-start">
-            <div class="image-box" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
-              <img src="images/service-2.png" alt="web development illustration" class="img-fluid">
+    </div>
+    <br>
+    <!-- Bunny Smile At You  -->
+    <div class="container theme-3 p-7">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-4 text-start">
+          <div class="image-box" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+            <img src="images/service-2.png" alt="web development illustration" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-4">
+          <div class="content" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
+            <p class="display-2-themed mt-1">Bunny Smile At You</p>
+            <p class="lh-lg pb-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, impedit rem,
+              doloremque autem quibusdam blanditiis harum alias hic accusantium 
+              maxime atque ratione magni repellat?
+            </p>
+          </div>
+          <div class="uk-child-width-expand@s" uk-grid>
+            <div class="nav-link text-end" href="#faq" uk-scrollspy="cls: uk-animation-slide-right; delay: 100; repeat: true"><button type="button" class="rounded-pill btn-rounded">Mint Page
+              <span><i class="fas fa-arrow-right"></i></span></button>
+            </div>
+            <div class="nav-link text-start" href="#faq" uk-scrollspy="cls: uk-animation-slide-right; delay: 200; repeat: true"><button type="button" class="rounded-pill btn-rounded">Marketplace
+              <span><i class="fas fa-arrow-right"></i></span></button>
             </div>
           </div>
-          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-4">
-            <div class="content" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
-              <h2 class="display-2-themed mt-1">Bunny Smile At You</h2>
-              <p class="lh-lg pb-3">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, impedit rem,
-                doloremque autem quibusdam blanditiis harum alias hic accusantium 
-                maxime atque ratione magni repellat?
-              </p>
-            </div>
-            <a class="nav-link" href="#faq" uk-scrollspy="cls: uk-animation-slide-right; delay: 50; repeat: true"><button type="button" class="rounded-pill btn-rounded">Mint Page
-              <span><i class="fas fa-arrow-right"></i></span>
-            </button></a>
-            </button>
-          </div>
+          </button>
         </div>
       </div>
     </div>
-    <div class="theme">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 10 1400 180"><path transform="scale(1, -1) translate(0, -250)" fill="#151414" fill-opacity="1" d="M0,160L48,176C96,192,192,224,288,208C384,192,480,128,576,133.3C672,139,768,213,864,202.7C960,192,1056,96,1152,74.7C1248,53,1344,107,1392,133.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    <div class="theme-2">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 10 1400 180"><path transform="scale(1, -1) translate(0, -250)" fill="#181818" fill-opacity="1" d="M0,160L48,176C96,192,192,224,288,208C384,192,480,128,576,133.3C672,139,768,213,864,202.7C960,192,1056,96,1152,74.7C1248,53,1344,107,1392,133.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
     </div>
   </section>
 
   <!-- project  -->
-  <section id="project" class="theme">
+  <section id="project" class="theme-2">
     <div class="container">
-      <div class="row text-center text-white">
-        <h1 class="display-1 pt-6" uk-scrollspy="cls: uk-animation-slide-top; repeat: true">PROJECT</h1>   
-        <p class="pb-5" uk-scrollspy="cls: uk-animation-slide-top; delay: 200; repeat: true">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+      <div class="row text-center pb-7">
+        <p class="display-1-themed" uk-scrollspy="cls: uk-animation-slide-top; repeat: true">PROJECT</p>   
+        <p uk-scrollspy="cls: uk-animation-slide-top; delay: 200; repeat: true">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
       </div>
     </div>
-    <h1 class="display-2 text-white text-center pt-5 pb-5" uk-scrollspy="cls: uk-animation-slide-top; delay: 300; repeat: true">Utilities</h1>  
-    <div class="container">
-      <div class="uk-child-width-1-2@s uk-grid-match" uk-grid>
+    <div class="container theme-3 shadow pb-7" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+      <div class="container theme-4 shadow">
+        <div class="display-2-themed text-center d-block fas fa-gears p-5"><span class="display-2-themed"> Utilities</span></div> 
+      </div>
+      <div class="uk-child-width-1-3@s uk-grid-match" uk-grid>
         <div>
-            <div class="mx-5" uk-scrollspy="cls: uk-animation-slide-left; delay: 300; repeat: true">
-                <p class="display-2 text-center d-block fas fa-circle-up fa-bounce"></p>
-                <p class="text-center fw-bold">Trait Upgrade</p>
-                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <div class="mx-5 pt-7" uk-scrollspy="cls: uk-animation-slide-left; delay: 400; repeat: true">
+                <p class="text-center d-block fas fa-circle-up fa-bounce" style="color: #ff33a4; font-size: 50px;"></p>
+                <p class="text-center display-3-head">Trait Upgrade</p>
+                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet.</p>
             </div>
         </div>
         <div>
-          <div class="mx-5 pb-6" uk-scrollspy="cls: uk-animation-slide-right; delay: 300; repeat: true">
-              <p class="display-2 text-center d-block fas fa-palette fa-beat-fade"></p>
-              <p class="text-center fw-bold">Unique Art</p>
-              <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          </div>
-      </div>
-        <div>
-          <div class="mx-5" uk-scrollspy="cls: uk-animation-slide-left; delay: 300; repeat: true">
-            <p class="display-2 text-center d-block fas fa-hand-holding-dollar fa-shake"></p>
-            <p class="text-center fw-bold">Investment</p>
-            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <div class="mx-5 pt-7" uk-scrollspy="cls: uk-animation-slide-left; delay: 300; repeat: true">
+              <p class="text-center d-block fas fa-ticket fa-beat-fade" style="color: #f7b82a; font-size: 50px;"></p>
+              <p class="text-center display-3-head">Access Ticket</p>
+              <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet.</p>
           </div>
         </div>
         <div>
-          <div class="mx-5" uk-scrollspy="cls: uk-animation-slide-right; delay: 300; repeat: true">
-            <p class="display-2 text-center d-block fas fa-users-line fa-flip"></p>
-            <p class="text-center fw-bold">Community Based</p>
-            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <div class="mx-5 pt-7 pb-3" uk-scrollspy="cls: uk-animation-slide-left; delay: 200; repeat: true">
+            <p class="text-center d-block fas fa-hand-holding-dollar fa-beat-fade" style="color: #6aff39; font-size: 50px;"></p>
+            <p class="text-center display-3-head">Investment</p>
+            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div>
+          <div class="mx-5" uk-scrollspy="cls: uk-animation-slide-left; delay: 400; repeat: true">
+            <p class="text-center d-block fas fa-paintbrush fa-beat-fade" style="color: #fb3737; font-size: 50px;"></p>
+            <p class="text-center display-3-head">Unique 3D Art</p>
+            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div>
+          <div class="mx-5" uk-scrollspy="cls: uk-animation-slide-left; delay: 300; repeat: true">
+            <p class="text-center d-block fas fa-users-line fa-beat-fade" style="color: #299cff; font-size: 50px;"></p>
+            <p class="text-center display-3-head">Community Based</p>
+            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div>
+          <div class="mx-5" uk-scrollspy="cls: uk-animation-slide-left; delay: 200; repeat: true">
+            <p class="text-center d-block fas fa-circle-info fa-beat-fade" style="color: #ffffff; font-size: 50px;"></p>
+            <p class="text-center display-3-head">More in the future</p>
+            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet.</p>
           </div>
         </div>
       </div>
     </div>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#151414" fill-opacity="1" d="M0,160L48,176C96,192,192,224,288,208C384,192,480,128,576,133.3C672,139,768,213,864,202.7C960,192,1056,96,1152,74.7C1248,53,1344,107,1392,133.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    <br><br>
+    <div class="container theme-3 shadow pb-7" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 200; repeat: true">
+      <div class="container theme-4 shadow">
+        <div class="display-2-themed text-center d-block fas fa-map-location-dot p-5"><span class="display-2-themed"> Roadmap</span></div> 
+      </div>
+      <div class="uk-child-width-1-3@s uk-grid-match" uk-grid>
+        <div>
+            <div class="mx-5 pt-7" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300; repeat: true">
+              <ul class="fa-ul">
+                <p style="color:#ff33a4;">Phase 1</p>
+                <li><span class="fa-li"><i class="fa-solid fa-check-square"></i></span>Social media publish</li>
+                <li><span class="fa-li"><i class="fa-solid fa-check-square"></i></span>1st collection release</li>
+                <li><span class="fa-li"><i class="fa-solid fa-spinner fa-pulse"></i></span>100 NFT released</li>
+              </ul>
+            </div>
+        </div>
+        <div>
+          <div class="mx-5 pt-7" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 400; repeat: true">
+            <ul class="fa-ul">
+              <p style="color:#f7b82a;">Phase 2</p>
+              <li><span class="fa-li"><i class="fa-regular fa-square"></i></span>Website publish</li>
+              <li><span class="fa-li"><i class="fa-regular fa-square"></i></span>2nd collection release</li>
+              <li><span class="fa-li"><i class="fa-regular fa-square"></i></span>Tools release</li>
+              <li><span class="fa-li"><i class="fa-regular fa-square"></i></span>Holders airdrop</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="mx-5 pt-7" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 500; repeat: true">
+            <ul class="fa-ul">
+              <p style="color:#6aff39;">Phase 3</p>
+              <li><span class="fa-li"><i class="fa-regular fa-square"></i></span>Trait upgrade</li>
+              <li><span class="fa-li"><i class="fa-regular fa-square"></i></span>Legendary drops</li>
+              <li><span class="fa-li"><i class="fa-regular fa-square"></i></span>TBA</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 270"><path fill="#181818" fill-opacity="1" d="M0,160L48,176C96,192,192,224,288,208C384,192,480,128,576,133.3C672,139,768,213,864,202.7C960,192,1056,96,1152,74.7C1248,53,1344,107,1392,133.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+  </section>
+
+  <!-- Galery  -->
+  <section id="galery" class="pb-7">
+    <div class="container">
+      <div class="row text-center">
+        <p class="display-1-themed" uk-scrollspy="cls: uk-animation-slide-top; repeat: true">GALERY</p>   
+        <p class="pb-5" uk-scrollspy="cls: uk-animation-slide-top; delay: 200; repeat: true">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+      </div>
+    </div>
+    <div class="container" uk-scrollspy="cls: uk-animation-slide-left; delay: 200; repeat: true">
+      <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="autoplay: true; autoplay-interval: 2000">
+
+        <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-grid">
+            <li>
+                <div class="uk-panel">
+                    <img src="images/slider/1.png" width="400" height="600" alt="">
+                </div>
+            </li>
+            <li>
+                <div class="uk-panel">
+                    <img src="images/slider/2.png" width="400" height="600" alt="">
+                </div>
+            </li>
+            <li>
+                <div class="uk-panel">
+                    <img src="images/slider/3.png" width="400" height="600" alt="">
+                </div>
+            </li>
+            <li>
+                <div class="uk-panel">
+                    <img src="images/slider/4.png" width="400" height="600" alt="">
+                </div>
+            </li>
+            <li>
+                <div class="uk-panel">
+                    <img src="images/slider/5.png" width="400" height="600" alt="">
+                </div>
+            </li>
+            <li>
+                <div class="uk-panel">
+                    <img src="images/slider/6.png" width="400" height="600" alt="">
+                </div>
+            </li>
+            <li>
+                <div class="uk-panel">
+                    <img src="images/slider/7.png" width="400" height="600" alt="">
+                </div>
+            </li>
+            <li>
+                <div class="uk-panel">
+                    <img src="images/slider/8.png" width="400" height="600" alt="">
+                </div>
+            </li>
+            <li>
+                <div class="uk-panel">
+                    <img src="images/slider/9.png" width="400" height="600" alt="">
+                </div>
+            </li>
+            <li>
+                <div class="uk-panel">
+                    <img src="images/slider/10.png" width="400" height="600" alt="">
+                </div>
+            </li>
+        </ul>
+    
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+    
+    </div>
+    </div>
   </section>
 
   <!-- Tools  -->
-  <section id="tools" class=" pt-2 pb-7">
+  <section id="tools" class="theme-2 p-7">
     <div class="container">
       <div class="row text-center">
-        <h1 class="display-1-themed" uk-scrollspy="cls: uk-animation-slide-top; repeat: true">PROJECT TOOLS</h1>   
+        <p class="display-1-themed" uk-scrollspy="cls: uk-animation-slide-top; repeat: true">PROJECT TOOLS</p>   
         <p class="pb-5" uk-scrollspy="cls: uk-animation-slide-top; delay: 200; repeat: true">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
       </div>
     </div>
   </section>
 
-  <!-- Team  -->
-  <section id="team" class="theme-sub pt-7 pb-7">
-    <div class="container">
-      <div class="row text-center">
-        <h1 class="display-1-themed" uk-scrollspy="cls: uk-animation-slide-top; repeat: true">THE TEAM</h1>   
-        <p class="pb-5" uk-scrollspy="cls: uk-animation-slide-top; delay: 200; repeat: true">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+    <!-- Team  -->
+    <section id="team" class="p-7">
+      <div class="container">
+        <div class="row text-center">
+          <p class="display-1-themed" uk-scrollspy="cls: uk-animation-slide-top; repeat: true">THE TEAM</p>   
+          <p class="pb-5" uk-scrollspy="cls: uk-animation-slide-top; delay: 200; repeat: true">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
   <!-- FAQ  -->
-  <section id="faq" class="faq pt-5 pb-5">
+  <section id="faq" class="theme-2 p-7">
     <div>
       <div class="container">
         <div class="row text-center">
-          <h1 class="display-1-themed" uk-scrollspy="cls: uk-animation-slide-top; repeat: true">FAQ</h1>   
+          <p class="display-1-themed" uk-scrollspy="cls: uk-animation-slide-top; repeat: true">FAQ</p>   
           <p class="pb-5" uk-scrollspy="cls: uk-animation-slide-top; delay: 200; repeat: true">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
         </div>
         <!-- Questions  -->
-        <div class="row mt-5">
-            <div class="col-md-12">
-              <div class="accordion" id="accordionExample">
-                <!-- Question 1 -->
-                <div class="shadow mb-3">
-                  <h2 class="accordion-header" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
-                    <button class="fw-bold accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
-                      FAQ 1
-                    </button>
-                  </h2>
-                  <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <p>This is the first item's accordion body.</p>
-                    </div>
+        <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+          <div>
+            <ul uk-accordion>
+              <li>
+                  <a class="uk-accordion-title theme-4 shadow p-3" style="color: black;" href="#">Item 1</a>
+                  <div class="uk-accordion-content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                   </div>
-                </div>
-                <!-- Question 2 -->
-                <div class="shadow mb-3">
-                  <h2 class="accordion-header" uk-scrollspy="cls: uk-animation-slide-right; delay: 100; repeat: true">
-                    <button class="fw-bold accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
-                      FAQ 2
-                    </button>
-                  </h2>
-                  <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <p>This is the first item's accordion body.</p>
-                    </div>
+              </li>
+              <li>
+                  <a class="uk-accordion-title theme-4 shadow p-3" href="#">Item 2</a>
+                  <div class="uk-accordion-content">
+                      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
                   </div>
-                </div>
-                <!-- Question 3 -->
-                <div class="shadow mb-3">
-                  <h2 class="accordion-header" uk-scrollspy="cls: uk-animation-slide-left; delay: 200; repeat: true">
-                    <button class="fw-bold accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
-                      FAQ 3
-                    </button>
-                  </h2>
-                  <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <p>This is the first item's accordion body.</p>
-                    </div>
+              </li>
+              <li>
+                  <a class="uk-accordion-title theme-4 shadow p-3" href="#">Item 3</a>
+                  <div class="uk-accordion-content">
+                      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
                   </div>
-                </div>
-                <!-- Question 4 -->
-                <div class="shadow mb-3">
-                  <h2 class="accordion-header" uk-scrollspy="cls: uk-animation-slide-right; delay: 300; repeat: true">
-                    <button class="fw-bold accordion-button  collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4">
-                      FAQ 4
-                    </button>
-                  </h2>
-                  <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <p>This is the first item's accordion body.</p>
-                    </div>
+              </li>
+          </ul>
+          </div>
+          <div>
+            <ul uk-accordion>
+              <li>
+                  <a class="uk-accordion-title theme-4 shadow p-3" href="#">Item 1</a>
+                  <div class="uk-accordion-content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                   </div>
-                </div>
-              </div>
-            </div>
-        </div>
+              </li>
+              <li>
+                  <a class="uk-accordion-title theme-4 shadow p-3" href="#">Item 2</a>
+                  <div class="uk-accordion-content">
+                      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
+                  </div>
+              </li>
+              <li>
+                  <a class="uk-accordion-title theme-4 shadow p-3" href="#">Item 3</a>
+                  <div class="uk-accordion-content">
+                      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
+                  </div>
+              </li>
+          </ul>
+          </div>
+      </div>
       </div>
     </div>
   </section>
 
     <!-- Footer -->
-    <div class="theme-sub">
+    <div class="pb-5">
       <br>
-      <div class="container mt-5">
-        <div class="row text-white justify-content-center">
+      <div class="container mt-5 pb-5">
+        <div class="row justify-content-center">
           <div class="col-12 col-sm-6 col-md-3 mx-auto">
             <div class="image-box">
               <img src="images/logo.png" alt="logo image" class="img-fluid">
@@ -296,27 +453,21 @@
             </ul>
         </div>
       </div>
-    </div>
-
-    <!-- bsaynft copyright -->
-    <div class="footer-bottom pb-5">
+      </div>
       <div class="container">
-        <div class="row text-center text-white">
+        <div class="row text-center">
           <div class="col-12">
-            Copyright &COPY; bsaynft 2022. All rights reserved.
+            Site construct by Yan, using <a href="https://getuikit.com/">UIkit</a> & <a href="https://fontawesome.com/">Font Awesome</a> framework.<br>
+            Copyright © bsaynft 2022. All rights reserved.
           </div>
         </div>
       </div>
-    </div>
-  </footer>
 
   <!-- Back to top button  -->
   <a href="#" class="shadow btn-primary rounded-circle back-to-top">
     <i class="fas fa-chevron-up"></i>
   </a>
 
-  <!-- Bootstrap 5 JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   <!-- Font Awesome JS -->
   <script src="https://kit.fontawesome.com/e2988c9981.js" crossorigin="anonymous"></script>
   <!-- UIkit JS -->
