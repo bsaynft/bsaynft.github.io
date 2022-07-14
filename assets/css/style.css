@@ -97,7 +97,10 @@ a {
 a:hover {
   color: #7a1ec0;
 }
-img,
+img {
+  vertical-align: middle;
+  border-radius: 10%;
+}
 svg {
   vertical-align: middle;
 }
@@ -2046,7 +2049,7 @@ button:not(:disabled) {
   right: 1.875rem;
   bottom: 1.875rem;
   z-index: 9999;
-  background-color: #7a1ec0;
+  background-color: #9100ff;
 }
 .back-to-top i {
   color: #fff;

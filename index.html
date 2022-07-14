@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bunny Smile At You</title>
-    <!-- Custom fonts -->
+    <!-- Import Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
@@ -24,65 +24,36 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg theme-1 shadow fixed-top">
       <div class="container">
+        <!-- Navbar logo -->
         <a class="image-box p-3" href="">
           <img src="images/logo.png" alt="logo image">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <!-- Navbar menu -->
         <div class="collapse navbar-collapse justify-content-start" id="navbarNav">
           <div class="navbar-nav">
             <li class="nav-item"><a class="nav-link" href="#main">Main</a></li>
             <li class="nav-item"><a class="nav-link" href="#Collections">Collections</a></li>
             <li class="nav-item"><a class="nav-link" href="#project">Project</a></li>
             <li class="nav-item"><a class="nav-link" href="#galery">Galery</a></li>
-            <li class="nav-item"><a class="nav-link" href="#tools">Tools</a>
-              <div uk-dropdown>
-                <ul class="uk-nav uk-dropdown-nav">
-                    <li><a href="#">Wardrobe</a></li>
-                    <li><a href="#">Rarity Checker</a></li>
-                    <li><a href="#">Upgrade Tool</a></li>
-                </ul>
-              </div>
-            </li>
             <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
             <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
           </div>
         </div>
+        <!-- Social Media shortcut -->
         <li class="nav-link"><a href="#"><i class="fab fa-twitter"></i></a></li>
         <li class="nav-link"><a href="#"><i class="fab fa-instagram"></i></a></li>
         <li class="nav-link"><a href="#"><i class="fab fa-discord"></i></a></li>
-        <li class="nav-link"><a href="#"><button type="button" class="rounded-pill btn-rounded primary-border">Mint Page
+        <!-- Backstage button -->
+        <li class="nav-link"><a href="#"><button type="button" class="rounded-pill btn-rounded primary-border">Backstage
           <span><i class="fas fa-arrow-right"></i></span>
         </button></a>
     </nav>
-
-    <nav class="uk-navbar-container" uk-navbar>
-      <div class="uk-navbar-left">
-  
-          <ul class="uk-navbar-nav">
-              <li class="uk-active"><a href="#">Active</a></li>
-              <li>
-                  <a href="#">Parent</a>
-                  <div class="uk-navbar-dropdown">
-                      <ul class="uk-nav uk-navbar-dropdown-nav">
-                          <li class="uk-active"><a href="#">Active</a></li>
-                          <li><a href="#">Item</a></li>
-                          <li><a href="#">Item</a></li>
-                      </ul>
-                  </div>
-              </li>
-              <li><a href="#">Item</a></li>
-          </ul>
-  
-      </div>
-  </nav>
 
   <!-- Main -->
   <section id="main" class="theme-1 pt-3">
     <div class="container pt-7">
       <div class="row align-items-center">
-        <!-- BSAY NFT description -->
+        <!-- BSAY description -->
         <div class="col-md-6 text-center">
           <p class="display-1-main" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">Bunny Smile At You</p>
           <p class="pb-3" uk-scrollspy="cls: uk-animation-slide-right; delay: 300; repeat: true">
@@ -108,6 +79,7 @@
 
   <!-- Collections -->
   <section id="Collections">
+    <!-- Collections Header -->
     <div class="container pt-5">
       <div class="row text-center">
         <p class="display-1-themed" uk-scrollspy="cls: uk-animation-slide-top; repeat: true">OUR COLLECTIONS</p>   
@@ -174,12 +146,14 @@
 
   <!-- project  -->
   <section id="project" class="theme-2">
+    <!-- Project Header -->
     <div class="container">
       <div class="row text-center pb-7">
         <p class="display-1-themed" uk-scrollspy="cls: uk-animation-slide-top; repeat: true">PROJECT</p>   
         <p uk-scrollspy="cls: uk-animation-slide-top; delay: 200; repeat: true">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
       </div>
     </div>
+    <!-- Utilities  -->
     <div class="container theme-3 shadow pb-7" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
       <div class="container theme-4 shadow">
         <div class="display-2-themed text-center d-block fas fa-gears p-5"><span class="display-2-themed"> Utilities</span></div> 
@@ -187,49 +161,50 @@
       <div class="uk-child-width-1-3@s uk-grid-match" uk-grid>
         <div>
             <div class="mx-5 pt-7" uk-scrollspy="cls: uk-animation-slide-left; delay: 400; repeat: true">
-                <p class="text-center d-block fas fa-circle-up fa-bounce" style="color: #ff33a4; font-size: 50px;"></p>
-                <p class="text-center display-3-head">Trait Upgrade</p>
-                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet.</p>
+                <p class="text-center d-block fas fa-shirt fa-beat-fade" style="color: #ff33a4; font-size: 50px;"></p>
+                <p class="text-center display-3-head">Trait Symbiosis</p>
+                <p class="text-center">There will be special type bunnies that you can change the trait with the help of other bunnies. You can access this feature through our backstage.</p>
             </div>
         </div>
         <div>
           <div class="mx-5 pt-7" uk-scrollspy="cls: uk-animation-slide-left; delay: 300; repeat: true">
-              <p class="text-center d-block fas fa-ticket fa-beat-fade" style="color: #f7b82a; font-size: 50px;"></p>
-              <p class="text-center display-3-head">Access Ticket</p>
-              <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet.</p>
+            <p class="text-center d-block fas fa-door-open fa-beat-fade" style="color: #ed6733; font-size: 50px;"></p>
+            <p class="text-center display-3-head">Backstage</p>
+            <p class="text-center">Here you can try various things, such as seeing the bunnies you have, peek rarity, trying out various costumes, do trait symbiotic process, and so on.</p>
           </div>
         </div>
         <div>
-          <div class="mx-5 pt-7 pb-3" uk-scrollspy="cls: uk-animation-slide-left; delay: 200; repeat: true">
-            <p class="text-center d-block fas fa-hand-holding-dollar fa-beat-fade" style="color: #6aff39; font-size: 50px;"></p>
-            <p class="text-center display-3-head">Investment</p>
-            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet.</p>
+          <div class="mx-5 pt-7" uk-scrollspy="cls: uk-animation-slide-left; delay: 200; repeat: true">
+              <p class="text-center d-block fas fa-ticket fa-beat-fade" style="color: #f7b82a; font-size: 50px;"></p>
+              <p class="text-center display-3-head">Access Ticket</p>
+              <p class="text-center">By having a bunny, you will get access to our events and beneficial rewards. You will also be at the front row of our upcoming projects.</p>
           </div>
         </div>
         <div>
           <div class="mx-5" uk-scrollspy="cls: uk-animation-slide-left; delay: 400; repeat: true">
             <p class="text-center d-block fas fa-paintbrush fa-beat-fade" style="color: #fb3737; font-size: 50px;"></p>
-            <p class="text-center display-3-head">Unique 3D Art</p>
-            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet.</p>
+            <p class="text-center display-3-head">Unique Design</p>
+            <p class="text-center">This project is designed in a unique 3D artstyle and created based on hundreds of traits. Thus, each token will be different from the others.</p>
           </div>
         </div>
         <div>
-          <div class="mx-5" uk-scrollspy="cls: uk-animation-slide-left; delay: 300; repeat: true">
-            <p class="text-center d-block fas fa-users-line fa-beat-fade" style="color: #299cff; font-size: 50px;"></p>
-            <p class="text-center display-3-head">Community Based</p>
-            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet.</p>
+          <div class="mx-5 pb-3" uk-scrollspy="cls: uk-animation-slide-left; delay: 300; repeat: true">
+            <p class="text-center d-block fas fa-hand-holding-dollar fa-beat-fade" style="color: #6aff39; font-size: 50px;"></p>
+            <p class="text-center display-3-head">Investment</p>
+            <p class="text-center">Hold your bunnies and watch the market grow. This project is designed for the long term.</p>
           </div>
         </div>
         <div>
           <div class="mx-5" uk-scrollspy="cls: uk-animation-slide-left; delay: 200; repeat: true">
-            <p class="text-center d-block fas fa-circle-info fa-beat-fade" style="color: #ffffff; font-size: 50px;"></p>
-            <p class="text-center display-3-head">More in the future</p>
-            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet.</p>
+            <p class="text-center d-block fas fa-users-line fa-beat-fade" style="color: #299cff; font-size: 50px;"></p>
+            <p class="text-center display-3-head">Community Based</p>
+            <p class="text-center">This project is community based. Determine the future direction of this project together. Build a solid community in the Metaverse.</p>
           </div>
         </div>
       </div>
     </div>
     <br><br>
+    <!-- Roadmap  -->
     <div class="container theme-3 shadow pb-7" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 200; repeat: true">
       <div class="container theme-4 shadow">
         <div class="display-2-themed text-center d-block fas fa-map-location-dot p-5"><span class="display-2-themed"> Roadmap</span></div> 
@@ -251,7 +226,7 @@
               <p style="color:#f7b82a;">Phase 2</p>
               <li><span class="fa-li"><i class="fa-regular fa-square"></i></span>Website publish</li>
               <li><span class="fa-li"><i class="fa-regular fa-square"></i></span>2nd collection release</li>
-              <li><span class="fa-li"><i class="fa-regular fa-square"></i></span>Tools release</li>
+              <li><span class="fa-li"><i class="fa-regular fa-square"></i></span>Backstage access</li>
               <li><span class="fa-li"><i class="fa-regular fa-square"></i></span>Holders airdrop</li>
             </ul>
           </div>
@@ -260,7 +235,7 @@
           <div class="mx-5 pt-7" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 500; repeat: true">
             <ul class="fa-ul">
               <p style="color:#6aff39;">Phase 3</p>
-              <li><span class="fa-li"><i class="fa-regular fa-square"></i></span>Trait upgrade</li>
+              <li><span class="fa-li"><i class="fa-regular fa-square"></i></span>Symbiosis implementation</li>
               <li><span class="fa-li"><i class="fa-regular fa-square"></i></span>Legendary drops</li>
               <li><span class="fa-li"><i class="fa-regular fa-square"></i></span>TBA</li>
             </ul>
@@ -273,12 +248,14 @@
 
   <!-- Galery  -->
   <section id="galery" class="pb-7">
+    <!-- Galery Header -->
     <div class="container">
       <div class="row text-center">
         <p class="display-1-themed" uk-scrollspy="cls: uk-animation-slide-top; repeat: true">GALERY</p>   
         <p class="pb-5" uk-scrollspy="cls: uk-animation-slide-top; delay: 200; repeat: true">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
       </div>
     </div>
+    <!-- Image slider -->
     <div class="container" uk-scrollspy="cls: uk-animation-slide-left; delay: 200; repeat: true">
       <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="autoplay: true; autoplay-interval: 2000">
 
@@ -342,18 +319,9 @@
     </div>
   </section>
 
-  <!-- Tools  -->
-  <section id="tools" class="theme-2 p-7">
-    <div class="container">
-      <div class="row text-center">
-        <p class="display-1-themed" uk-scrollspy="cls: uk-animation-slide-top; repeat: true">PROJECT TOOLS</p>   
-        <p class="pb-5" uk-scrollspy="cls: uk-animation-slide-top; delay: 200; repeat: true">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-      </div>
-    </div>
-  </section>
-
     <!-- Team  -->
-    <section id="team" class="p-7">
+    <section id="team" class="p-7 theme-2">
+      <!-- Team Header -->
       <div class="container">
         <div class="row text-center">
           <p class="display-1-themed" uk-scrollspy="cls: uk-animation-slide-top; repeat: true">THE TEAM</p>   
@@ -363,8 +331,9 @@
     </section>
 
   <!-- FAQ  -->
-  <section id="faq" class="theme-2 p-7">
+  <section id="faq" class="p-7">
     <div>
+      <!-- FAQ Header -->
       <div class="container">
         <div class="row text-center">
           <p class="display-1-themed" uk-scrollspy="cls: uk-animation-slide-top; repeat: true">FAQ</p>   
@@ -422,15 +391,17 @@
   </section>
 
     <!-- Footer -->
-    <div class="pb-5">
+    <div class="pb-5 theme-2">
       <br>
       <div class="container mt-5 pb-5">
         <div class="row justify-content-center">
+          <!-- BSAY logo -->
           <div class="col-12 col-sm-6 col-md-3 mx-auto">
             <div class="image-box">
               <img src="images/logo.png" alt="logo image" class="img-fluid">
             </div>
           </div>
+          <!-- Project links -->
           <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
             <p class="display-3">Marketplace</p>
             <ul class="list-inline campany-list">
@@ -454,6 +425,7 @@
         </div>
       </div>
       </div>
+      <!-- Copyright -->
       <div class="container">
         <div class="row text-center">
           <div class="col-12">
@@ -468,6 +440,7 @@
     <i class="fas fa-chevron-up"></i>
   </a>
 
+  <!-- Script -->
   <!-- Font Awesome JS -->
   <script src="https://kit.fontawesome.com/e2988c9981.js" crossorigin="anonymous"></script>
   <!-- UIkit JS -->
