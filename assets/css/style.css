@@ -264,6 +264,16 @@ button:not(:disabled) {
   margin-left: auto;
   border-radius: 5rem !important;
 }
+
+.container-modal {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 2rem !important;
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
