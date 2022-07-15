@@ -21,9 +21,9 @@ body {
   -webkit-tap-highlight-color: transparent;
 }
 .theme-1 {
-  background: linear-gradient(to right, rgba(153, 38, 240), rgba(209, 34, 227));
   color: #fff;
   background-image: url('/images/theme.png');
+  background-repeat: no-repeat;
 }
 
 .theme-1-nav {
