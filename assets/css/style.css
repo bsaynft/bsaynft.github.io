@@ -12,13 +12,11 @@
 body {
   margin: 0;
   font-family: 'Concert One', cursive;
-  font-size: 1.2rem;
-  font-weight: 100;
+  font-size: 1.3rem;
+  font-weight: 500;
   line-height: 1.5;
-  color: #fff;
-  background-color: #181818;
-  -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: transparent;
+  color: rgb(138, 39, 138);
+  background-color: #ffffff;
 }
 .theme-1 {
   color: #fff;
@@ -27,7 +25,7 @@ body {
 }
 
 .theme-1-nav {
-  background: linear-gradient(to right, rgba(153, 38, 240), rgba(209, 34, 227));
+  background: rgba(153, 38, 240);
   color: #fff;
 }
 
@@ -50,13 +48,10 @@ body {
   text-decoration: none;
 }
 .theme-2 {
-  background: linear-gradient(to right, rgb(26, 26, 26) 0, rgb(31, 31, 31) 100%);
+  background: rgb(255, 255, 255);
 }
 .theme-3 {
-  background: rgb(48 48 48);
-}
-.theme-4 {
-  background: rgb(255, 255, 255);
+  background: rgb(235, 235, 235);
 }
 .display-1 {
   font-size: 3.5rem;
@@ -66,10 +61,10 @@ body {
   font-size: 4rem;
   font-weight: 400;
   font-family: 'Bungee Shade', cursive;
+  color: rgb(255, 255, 255);
 }
 .display-1-themed {
   font-size: 4rem;
-  text-transform: capitalize;
   font-weight: 1000;
   background-image: linear-gradient(to right, rgba(153, 38, 240), rgba(209, 34, 227));
   -webkit-background-clip: text;
@@ -82,7 +77,6 @@ body {
 .display-2-themed {
   font-family: 'Concert One', cursive;
   font-size: 3rem;
-  text-transform: capitalize;
   font-weight: 1000;
   background-image: linear-gradient(to right, rgba(153, 38, 240), rgba(209, 34, 227));
   -webkit-background-clip: text;
@@ -104,6 +98,11 @@ body {
 .display-3-head {
   font-size: 1.5rem;
   font-weight: 8000;
+}
+.display-3-main {
+  font-size: 1.3rem;
+  font-weight: 50;
+  color: #ffffff;
 }
 a {
   color: #9926f0;
