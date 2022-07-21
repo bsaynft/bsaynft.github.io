@@ -92,7 +92,6 @@ body {
   border-radius: 10%;
   background-image: linear-gradient(to right, rgba(153, 38, 240), rgba(209, 34, 227));
 }
-
 .display-3 {
   font-size: 1rem;
   font-weight: 50;
@@ -280,6 +279,15 @@ button:not(:disabled) {
   margin-right: auto;
   margin-left: auto;
   border-radius: 5rem !important;
+}
+
+.container-sm {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 1rem !important;
 }
 
 .container-modal {

@@ -45,21 +45,53 @@
         <!-- Smile Labs button -->
         <li class="nav-link">
           <a href="#">
-            <button type="button" class="rounded-pill btn-rounded" uk-toggle="target: #modal-example">Smile Labs <span><i class="fas fa-arrow-right"></i></span></button>
+            <button type="button" class="rounded-pill btn-rounded" uk-toggle="target: #available-soon">Smile Labs <span><i class="fas fa-arrow-right"></i></span></button>
           </a>
         </li>
     </nav>
 
     <!-- Available soon dialog -->
-    <div id="modal-example" uk-modal>
+    <div id="available-soon" uk-modal>
       <div class="uk-modal-dialog container-modal text-center p-2 uk-margin-auto-vertical">
+        <div>
+          <p class="display-2-themed">Comming Soon!</p>
+          <p class="text-black">This content will be available soon. Stay excited!</p>
           <div>
-            <p class="display-2-themed">Comming Soon!</p>
-            <p class="text-black">This content will be available soon. Stay excited!</p>
-            <div>
-              <button type="button" class="uk-modal-close rounded-pill btn-rounded-special shadow">I Understand :)</button>
-            </div>
+            <button type="button" class="uk-modal-close rounded-pill btn-rounded-special shadow">I Understand :)</button>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Get NFT dialog -->
+    <div id="get-nft" uk-modal>
+      <div class="uk-modal-dialog container-modal text-center p-2 uk-margin-auto-vertical">
+        <div class="container theme-2 shadow">
+          <div class="display-2-themed text-center p-3">Get your bunny here :</div> 
+        </div>
+        <div class="uk-grid-match uk-child-width-1-3 p-4 justify-content-center uk-grid">
+          <a href="https://opensea.io/collection/bsay" target="_blank">
+            <div class="theme-2 container-sm shadow p-3">
+              <p class="text-center d-block fas fa-store" style="font-size: 40px;"></p>
+              <p class="text-center">Bunny Marketplace</p>
+            </div>
+          </a>
+          <a>
+            <div class="theme-2 container-sm shadow p-3">
+              <p class="text-center d-block fas fa-square-plus" style="font-size: 40px;"></p>
+              <p class="text-center">Mint META Bunny</p>
+            </div>
+          </a>
+          <a>
+            <div class="theme-2 container-sm shadow p-3">
+              <p class="text-center d-block fas fa-store" style="font-size: 40px;"></p>
+              <p class="text-center">META Bunny Marketplace</p>
+            </div>
+          </a>
+        </div>
+        <div>
+          <button type="button" class="uk-modal-close rounded-pill btn-rounded-special shadow">I'll get my bunny later :)</button>
+        </div>
       </div>
     </div>
 
@@ -74,7 +106,7 @@
             Throw some smiles, not grenades :) Spread loves, not landmines.<br>Bunny Smile At You is a collection of unique 3D bunny characters that ready to dive into the Metaverse to spread the loves <3</p>
           <!-- MINT/Marketplace button -->
           <a class="nav-link fa-beat" href="#">
-            <button type="button" class="rounded-pill btn-rounded-special shadow" uk-scrollspy="cls: uk-animation-slide-left; delay: 200; repeat: true" style="--fa-beat-scale: 1.2;" uk-toggle="target: #modal-example">MINT NOW!
+            <button type="button" class="rounded-pill btn-rounded-special shadow" uk-scrollspy="cls: uk-animation-slide-left; delay: 200; repeat: true" style="--fa-beat-scale: 1.2;" uk-toggle="target: #get-nft">MINT NOW!
               <span><i class="fas fa-arrow-right"></i></span>
             </button>
           </a>
@@ -141,10 +173,10 @@
             </p>
           </div>
           <div class="uk-child-width-expand@s" uk-grid>
-            <div class="nav-link text-end" href="#" uk-scrollspy="cls: uk-animation-slide-right; delay: 100; repeat: true"><button type="button" class="rounded-pill btn-rounded-special" uk-toggle="target: #modal-example">Mint Page
+            <div class="nav-link text-end" href="#" uk-scrollspy="cls: uk-animation-slide-right; delay: 100; repeat: true"><button type="button" class="rounded-pill btn-rounded-special" uk-toggle="target: #available-soon">Mint Page
               <span><i class="fas fa-arrow-right"></i></span></button>
             </div>
-            <div class="nav-link text-start" href="#" uk-scrollspy="cls: uk-animation-slide-right; delay: 100; repeat: true"><button type="button" class="rounded-pill btn-rounded-special" uk-toggle="target: #modal-example">Marketplace
+            <div class="nav-link text-start" href="#" uk-scrollspy="cls: uk-animation-slide-right; delay: 100; repeat: true"><button type="button" class="rounded-pill btn-rounded-special" uk-toggle="target: #available-soon">Marketplace
               <span><i class="fas fa-arrow-right"></i></span></button>
             </div>
           </div>
@@ -435,14 +467,12 @@
                   <a class="theme-3 uk-accordion-title shadow p-3" href="#">Where can I get my Bunny?</a>
                   <div class="uk-accordion-content">
                       <p>
-                        You can get your Bunny from our public sale session by minting your NFT using your Metamask wallet. It will cost you 10 Matic per one NFT and a very small amount of gas fee. 
-                        Another way is to visit our marketplace on OpenSea and buy a pre-minted NFT.</p>
+                        You can get your Bunny by clicking <a href="#" uk-toggle="target: #get-nft">this</a> link.</p>
                   </div>
               </li>
               <li uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
-                <a class="theme-3 uk-accordion-title shadow p-3" href="#">What does public sale mean? what is mint?</a>
+                <a class="theme-3 uk-accordion-title shadow p-3" href="#">What is mint?</a>
                 <div class="uk-accordion-content">
-                    <p>Public sale is a session where we sell our NFT to the public. In this session, you can get your NFT at the floor price by minting.</p>
                     <p>
                       Minting is the process of printing your token into the blockchain, so that can be displayed as an NFT. It will cost you 10 Matic per one NFT you mint and a very small amount of gas fee.
                     </p>
@@ -492,7 +522,7 @@
       READY TO GET YOUR FIRST BUNNY?
     </p>
     <a class="nav-link fa-beat" href="#">
-      <button type="button" class="rounded-pill btn-rounded-special shadow" style="--fa-beat-scale: 1.2;" uk-toggle="target: #modal-example">GET MY FIRST BUNNY!
+      <button type="button" class="rounded-pill btn-rounded-special shadow" style="--fa-beat-scale: 1.2;" uk-toggle="target: #get-nft">GET MY FIRST BUNNY!
       </button>
     </a>
   </div>
@@ -541,7 +571,7 @@
             <p>Other</p>
             <ul>
               <li><a href="https://linktr.ee/bsayNFT" target="_blank">Linktree</a></li>
-              <li><a href="#" target="#" uk-toggle="target: #modal-example">Smart Contract</a></li>
+              <li><a href="#" target="#" uk-toggle="target: #available-soon">Smart Contract</a></li>
               <li><a href="https://github.com/bsaynft/bsaynft.github.io" target="_blank">Github Repository</a></li>
             </ul>
         </div>
@@ -569,4 +599,8 @@
   <!-- UIkit JS -->
   <script src="assets/js/uikit.min.js"></script>
 </body>
-</html>
+</html> 
+
+<!-- 
+Constructed by Yan
+Copyright © bsaynft 2022. All rights reserved. -->
